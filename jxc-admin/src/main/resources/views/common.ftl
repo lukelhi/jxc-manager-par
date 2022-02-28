@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="${ctx.contextPath}/css/public.css" media="all">
 <script src="${ctx.contextPath}/lib/layui-v2.5.5/layui.js" charset="utf-8"></script>
 <script src="${ctx.contextPath}/js/lay-config.js" charset="utf-8"></script>
+<#assign security=JspTaglibs["http://www.springframework.org/security/tags"]/>
 <script type="text/javascript">
     var ctx="${ctx.contextPath}";
 </script>

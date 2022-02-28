@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpSession;
 
 /**
- * 乐字节  踏实教育 用心服务
  *
- * @author 乐字节--老李
+ * @author 李
  * @version 1.0
  */
 @Controller
@@ -41,16 +40,5 @@ public class MainController {
     @RequestMapping("welcome")
     public String welcome(){
         return "welcome";
-    }
-
-
-    /**
-     * 用户退出
-     * @return
-     */
-    @RequestMapping("signout")
-    public String signout(HttpSession session){
-        session.removeAttribute("user");
-        return "redirect:index";
     }
 }

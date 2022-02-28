@@ -14,12 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-/**
- * 乐字节  踏实教育 用心服务
- *
- * @author 乐字节--老李
- * @version 1.0
- */
+
 public class CodeGenerator {
     /**
      * <p>
@@ -49,7 +44,7 @@ public class CodeGenerator {
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/jxc-admin/src/main/java");
         //作者
-        gc.setAuthor("老李");
+        gc.setAuthor("李");
         //打开输出目录
         gc.setOpen(false);
         //xml开启 BaseResultMap
@@ -67,7 +62,7 @@ public class CodeGenerator {
                 "/Shanghai");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("root");
+        dsc.setPassword("111111");
         mpg.setDataSource(dsc);
 
         // 包配置
