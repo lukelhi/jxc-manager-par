@@ -21,7 +21,7 @@ import java.util.Map;
  * 供应商表 前端控制器
  * </p>
  *
- * @author 老李
+ * @author lhy
  */
 @Controller
 @RequestMapping("/supplier")

@@ -5,7 +5,7 @@ import java.time.LocalDateTime;
 /**
  * 公共返回对象
  *
- * @author 老李
+ * @author lhy
  */
 public class CaptchaImageModel {
 

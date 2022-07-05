@@ -15,9 +15,9 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 /**
- * 乐字节  踏实教育 用心服务
+ * 进销存
  *
- * @author 乐字节--老李
+ * @author 进销存--lhy
  * @version 1.0
  */
 @RestController
