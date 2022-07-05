@@ -15,22 +15,20 @@ import java.util.List;
  */
 public class ClassPathTldsLoader {
 
-    @Autowired
-    private FreeMarkerConfigurer freeMarkerConfigurer;
-
     /**
      * 指定路径，我们通过pom引入的
      * security.tld 中存放标签
      */
     private static final String SECURITY_TLD = "security.tld";
-
-    final private List<String> classPathTlds;
+    final List<String> classPathTlds;
+    @Autowired
+    private FreeMarkerConfigurer freeMarkerConfigurer;
 
     public ClassPathTldsLoader(String... classPathTlds) {
         super();
-        if(classPathTlds == null || classPathTlds.length <= 0){
+        if (classPathTlds == null || classPathTlds.length <= 0) {
             this.classPathTlds = Arrays.asList(SECURITY_TLD);
-        }else{
+        } else {
             this.classPathTlds = Arrays.asList(classPathTlds);
         }
     }
