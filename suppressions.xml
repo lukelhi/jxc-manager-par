@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+    "-//Checkstyle//DTD SuppressionFilter Configuration 1.2//EN"
+    "https://checkstyle.org/dtds/suppressions_1_2.dtd">
+<suppressions>
+  <suppress checks=".*" files=".*config.*"/>
+  <suppress checks=".*" files=".config.MybatisPlusConfig.java"/>
+</suppressions>
+<!--files属性是通配符，设置可以忽略的文件 -->
+<!-- 所有包名包含 thirdparties 的 Java 文件都不会输出代码风格检查报告 -->

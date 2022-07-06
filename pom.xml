@@ -26,9 +26,43 @@
         <module>jxc-admin</module>
         <module>jxc-code-generator</module>
     </modules>
-
-
-
-
-
+    <build>
+        <plugins>
+            <!--compiler在maven声明周期内置，所以后面不用声明也可使用-->
+            <!--            <plugin>-->
+            <!--                <artifactId>maven-compiler-plugin</artifactId>-->
+            <!--                <version>3.5.1</version>-->
+            <!--                <configuration>-->
+            <!--                    <source>${java.version}</source>-->
+            <!--                    <target>${java.version}</target>-->
+            <!--                    <encoding>UTF-8</encoding>-->
+            <!--                </configuration>-->
+            <!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>3.1.1</version>
+                <configuration>
+                    <configLocation>ali-style.xml</configLocation>
+                    <encoding>UTF-8</encoding>
+                    <!--<consoleOutput>true</consoleOutput>-->
+                    <!-- 检测到有错误，直接停止 -->
+                    <!--                    <failsOnError>true</failsOnError>-->
+                    <skip>false</skip>
+                    <!--                    <violationSeverity>error</violationSeverity>-->
+                    <suppressionsLocation>suppressions.xml</suppressionsLocation>
+<!--                    <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>-->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>validate</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>

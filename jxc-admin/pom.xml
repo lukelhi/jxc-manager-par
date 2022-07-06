@@ -88,9 +88,12 @@
             <artifactId>jsp-api</artifactId>
             <version>2.2.1-b03</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-checkstyle-plugin -->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.maven.plugins</groupId>-->
+<!--            <artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--            <version>3.1.2</version>-->
+<!--        </dependency>-->
     </dependencies>
 
-    <build>
-    </build>
 </project>
