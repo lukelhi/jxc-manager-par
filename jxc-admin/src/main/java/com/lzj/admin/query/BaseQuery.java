@@ -11,7 +11,7 @@ import lombok.Data;
  */
 @Data
 public class BaseQuery {
-    private Integer page=1; //当前页
+    private Integer page= 1; //当前页
     private Integer limit=10; //分页大小
 
 }
