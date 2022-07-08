@@ -4,7 +4,10 @@
     "https://checkstyle.org/dtds/suppressions_1_2.dtd">
 <suppressions>
   <suppress checks=".*" files=".*config.*"/>
-  <suppress checks=".*" files=".config.MybatisPlusConfig.java"/>
+<!--  <suppress checks=".*" files=".*.*"/>-->
+<!--  <suppress checks=".*" files="jxc-code-generator.*.*"/>-->
+  <suppress checks=".*" files="jxc-admin.*.*"/>
+<!--  <suppress checks=".*" files=".config.MybatisPlusConfig.java"/>-->
 </suppressions>
 <!--files属性是通配符，设置可以忽略的文件 -->
-<!-- 所有包名包含 thirdparties 的 Java 文件都不会输出代码风格检查报告 -->
+<!-- 可配置所有包名包含 thirdparties 的 Java 文件都不会输出代码风格检查报告 -->

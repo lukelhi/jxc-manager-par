@@ -49,7 +49,7 @@
                     <!-- 检测到有错误，直接停止 -->
                     <!--                    <failsOnError>true</failsOnError>-->
                     <skip>false</skip>
-                    <!--                    <violationSeverity>error</violationSeverity>-->
+<!--                                        <violationSeverity>error</violationSeverity>-->
                     <suppressionsLocation>suppressions.xml</suppressionsLocation>
 <!--                    <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>-->
                 </configuration>
