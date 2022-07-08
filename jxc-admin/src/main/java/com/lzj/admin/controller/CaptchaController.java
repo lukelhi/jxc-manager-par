@@ -24,7 +24,7 @@ import java.io.IOException;
 public class CaptchaController {
 
     @Resource
-    public DefaultKaptcha defaultKaptcha;
+    public DefaultKaptcha  defaultKaptcha;
 
 
     @RequestMapping(value="/image",method = RequestMethod.GET)
