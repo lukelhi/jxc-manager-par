@@ -21,7 +21,7 @@ import java.io.IOException;
  * @version 1.0
  */
 @RestController
-public class CaptchaController  {
+public class CaptchaController {
 
     @Resource
     public DefaultKaptcha defaultKaptcha;
