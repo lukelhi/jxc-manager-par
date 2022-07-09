@@ -11,8 +11,8 @@ wd=`pwd`
 print "当前工作目录：$wd"
 
 # check-style版本号
-check_style_version="checkstyle-10.3.1-all.jar"
-check_style_xml_name="ali-style.xml"
+check_style_version="checkstyle/checkstyle-10.3.1-all.jar"
+check_style_xml_name="checkstyle/ali-style.xml"
 check_jar_path="$wd/$check_style_version"
 check_xml_path="$wd/$check_style_xml_name"
 

@@ -6,7 +6,7 @@
   <suppress checks=".*" files=".*config.*"/>
 <!--  <suppress checks=".*" files=".*.*"/>-->
 <!--  <suppress checks=".*" files="jxc-code-generator.*.*"/>-->
-  <suppress checks=".*" files="jxc-admin.*.*"/>
+<!--  <suppress checks=".*" files="jxc-admin.*.*"/>-->
 <!--  <suppress checks=".*" files=".config.MybatisPlusConfig.java"/>-->
 </suppressions>
 <!--files属性是通配符，设置可以忽略的文件 -->

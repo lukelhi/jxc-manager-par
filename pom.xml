@@ -43,15 +43,14 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>3.1.1</version>
                 <configuration>
-                    <configLocation>ali-style.xml</configLocation>
+                    <configLocation>checkstyle/ali-style.xml</configLocation>
                     <encoding>UTF-8</encoding>
-                    <!--<consoleOutput>true</consoleOutput>-->
                     <!-- 检测到有错误，直接停止 -->
-                    <!--                    <failsOnError>true</failsOnError>-->
+                    <!-- <failsOnError>true</failsOnError>-->
                     <skip>false</skip>
-<!--                                        <violationSeverity>error</violationSeverity>-->
-                    <suppressionsLocation>suppressions.xml</suppressionsLocation>
-<!--                    <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>-->
+                    <!--<violationSeverity>error</violationSeverity>-->
+                    <suppressionsLocation>checkstyle/suppressions.xml</suppressionsLocation>
+                    <!-- <suppressionsFileExpression>checkstyle.suppressions.file</suppressionsFileExpression>-->
                 </configuration>
                 <executions>
                     <execution>
@@ -59,6 +58,25 @@
                         <phase>validate</phase>
                         <goals>
                             <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>com.rudikershaw.gitbuildhook</groupId>
+                <artifactId>git-build-hook-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <installHooks>
+                        <pre-commit>checkstyle/pre-commit</pre-commit>
+<!--                        <pre-merge-commit>hook-to-install.sh</pre-merge-commit>-->
+                    </installHooks>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>initialize</goal>
+                            <goal>install</goal>
                         </goals>
                     </execution>
                 </executions>
